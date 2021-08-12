@@ -4,7 +4,6 @@ import { CameraController } from './cam'
 const { MiniVideoMe } = window
 
 const cameraController = new CameraController()
-
 let videoDevices: MediaDeviceInfo[]
 
 navigator.mediaDevices.enumerateDevices().then(devices => {
@@ -60,6 +59,7 @@ MiniVideoMe.on('videoInputChange', (deviceId: string) => {
 
 /* Mac Only: Change Size */
 window.ondblclick = changeWrapperSize
+window.onclick = changeWrapperSize
 
 function changeWrapperSize() {
   MiniVideoMe.sendDoubleClick()

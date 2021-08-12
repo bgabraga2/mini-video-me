@@ -101,6 +101,7 @@ export const userPreferences = new Store({
         right: 'Shift+Alt+CommandOrControl+Right',
       },
       resizeCamera: {
+        toggle: 'CommandOrControl+F11',
         initial: 'Shift+Alt+CommandOrControl+1',
         large: 'Shift+Alt+CommandOrControl+2',
       },
@@ -109,7 +110,7 @@ export const userPreferences = new Store({
     rounded: true,
     flipHorizontal: false,
     zoom: 1.1,
-    borderColorCss: 'linear-gradient(to right, #988BC7, #FF79C6)',
+    borderColorCss: 'linear-gradient(160deg, #ebfa44, #bbefdb)',
   },
 })
 

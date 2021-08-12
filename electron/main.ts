@@ -102,11 +102,18 @@ function registerShortcuts() {
     }
   )
 
-  if (isMac) {
-    ipcMain.on('double-click', () => {
+  globalShortcut.register(
+    `${userPreferences.store.shortcuts.resizeCamera.toggle}`,
+    () => {
       screenController.toggleWindowSize()
-    })
-  }
+    }
+  )
+
+  // if (isMac) {
+  ipcMain.on('double-click', () => {
+    screenController.toggleWindowSize()
+  })
+  // }
 }
 
 async function createTrayMenu() {

@@ -3,7 +3,6 @@ import { config } from './config'
 type MovePosition = 'left' | 'right' | 'up' | 'down'
 
 type ZoomType = 'in' | 'out'
-
 export class CameraController {
   public videoElement: HTMLVideoElement
 
